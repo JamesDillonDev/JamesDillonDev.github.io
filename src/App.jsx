@@ -21,7 +21,9 @@ export default function App() {
       <div className="top-header">
         <Navbar bg="dark" variant="dark" expand="md" className="nav-bar">
           <Container className="d-flex justify-content-between align-items-center">
-            <h1 className="site-title mb-0">James Dillon.</h1>
+            <h1 className="site-title mb-0">
+              <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>James Dillon.</Link>
+            </h1>
             <Nav className="ms-auto">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
