@@ -1,6 +1,13 @@
 
+
 import './App.css';
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Physical from './pages/Physical.jsx';
+import Software from './pages/Software.jsx';
+import Contact from './pages/Contact.jsx';
 
 // Ensure Google Fonts for 'Roboto Mono' are loaded
 const fontLink = document.createElement('link');
@@ -10,19 +17,30 @@ document.head.appendChild(fontLink);
 
 export default function App() {
   return (
-    <div className="top-header">
-      <Navbar bg="dark" variant="dark" expand="md" className="nav-bar">
-        <Container className="d-flex justify-content-between align-items-center">
-          <h1 className="site-title mb-0">James Dillon.</h1>
-          <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#physical">Physical</Nav.Link>
-            <Nav.Link href="#software">Software</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </div>
+    <Router>
+      <div className="top-header">
+        <Navbar bg="dark" variant="dark" expand="md" className="nav-bar">
+          <Container className="d-flex justify-content-between align-items-center">
+            <h1 className="site-title mb-0">James Dillon.</h1>
+            <Nav className="ms-auto">
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
+              <Nav.Link as={Link} to="/physical">Physical</Nav.Link>
+              <Nav.Link as={Link} to="/software">Software</Nav.Link>
+              <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+      </div>
+      <div style={{ marginTop: '4.5rem' }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/physical" element={<Physical />} />
+          <Route path="/software" element={<Software />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
