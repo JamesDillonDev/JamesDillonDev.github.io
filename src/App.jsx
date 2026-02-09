@@ -2,7 +2,7 @@
 
 import './App.css';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Physical from './pages/Physical.jsx';
