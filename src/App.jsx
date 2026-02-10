@@ -2,6 +2,7 @@
 
 import './App.css';
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
@@ -31,6 +32,17 @@ export default function App() {
               <Nav.Link as={Link} to="/software">Software</Nav.Link>
               <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             </Nav>
+            <div className="social-links" style={{ display: 'flex', gap: '16px', marginLeft: '24px' }}>
+              <a href="https://github.com/JamesDillonDev" target="_blank" rel="noopener noreferrer" title="GitHub" style={{ color: '#fff', fontSize: '1.5rem', display: 'flex', alignItems: 'center' }}>
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/james-dillon-6b3121368/" target="_blank" rel="noopener noreferrer" title="LinkedIn" style={{ color: '#fff', fontSize: '1.5rem', display: 'flex', alignItems: 'center' }}>
+                <FaLinkedin />
+              </a>
+              <a href="https://www.instagram.com/james.dillon15" target="_blank" rel="noopener noreferrer" title="Instagram" style={{ color: '#fff', fontSize: '1.5rem', display: 'flex', alignItems: 'center' }}>
+                <FaInstagram />
+              </a>
+            </div>
           </Container>
         </Navbar>
       </div>
