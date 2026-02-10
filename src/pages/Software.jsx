@@ -44,6 +44,9 @@ export default function Software() {
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
       <ProjectCard owner="JamesDillonDev" repo="TCP-Chat" cardStyle={{ background: '#eaf0fa', border: '1.5px solid #b6cbe0', fontFamily: 'Roboto Mono, monospace' }} />
       </Col>
+      <Col style={{ display: 'flex', justifyContent: 'center' }}>
+      <ProjectCard owner="JamesDillonDev" repo="Minejourney" cardStyle={{ background: '#eaf0fa', border: '1.5px solid #b6cbe0', fontFamily: 'Roboto Mono, monospace' }} />
+      </Col>
       </Row>
       <div style={{ marginTop: '3rem', textAlign: 'center' }}>
       <h4 style={{ fontWeight: 700, marginBottom: 12, fontFamily: 'Roboto Mono, monospace' }}>My GitHub Contribution Graph</h4>
