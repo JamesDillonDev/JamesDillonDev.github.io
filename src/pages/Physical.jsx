@@ -1,4 +1,4 @@
-export default function Physical() {
+export default function Design() {
   return (
     <div style={{ padding: '2rem' }}>
       <h2>Physical Projects</h2>

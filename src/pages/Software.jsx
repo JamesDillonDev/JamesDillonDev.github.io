@@ -33,17 +33,20 @@ export default function Software() {
       <h2 style={{ marginTop: '0.5rem', marginBottom: '2rem', fontFamily: 'Roboto Mono, monospace', fontWeight: 700 }}>Software Projects</h2>
       <Row className="g-4" xs={1} sm={1} md={2} lg={3} xl={3} style={{ justifyContent: 'center' }}>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
-        <ProjectCard owner="JamesDillonDev" repo="gradicode" cardStyle={{ background: '#eaeaea', border: '1.5px solid #b6b6e0' }} />
+      <ProjectCard owner="JamesDillonDev" repo="gradicode" cardStyle={{ background: '#eaeaea', border: '1.5px solid #b6b6e0', fontFamily: 'Roboto Mono, monospace' }} />
       </Col>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
-        <ProjectCard owner="JamesDillonDev" repo="tanker" cardStyle={{ background: '#fbeaea', border: '1.5px solid #e0b6b6' }} />
+      <ProjectCard owner="JamesDillonDev" repo="tanker" cardStyle={{ background: '#fbeaea', border: '1.5px solid #e0b6b6', fontFamily: 'Roboto Mono, monospace' }} />
       </Col>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
-        <ProjectCard owner="JamesDillonDev" repo="JamesDillonDev.github.io" cardStyle={{ background: '#eaf7ea', border: '1.5px solid #b6e0b6' }} />
+      <ProjectCard owner="JamesDillonDev" repo="JamesDillonDev.github.io" cardStyle={{ background: '#eaf7ea', border: '1.5px solid #b6e0b6', fontFamily: 'Roboto Mono, monospace' }} />
+      </Col>
+      <Col style={{ display: 'flex', justifyContent: 'center' }}>
+      <ProjectCard owner="JamesDillonDev" repo="TCP-Chat" cardStyle={{ background: '#eaf0fa', border: '1.5px solid #b6cbe0', fontFamily: 'Roboto Mono, monospace' }} />
       </Col>
       </Row>
       <div style={{ marginTop: '3rem', textAlign: 'center' }}>
-      <h4 style={{ fontWeight: 700, marginBottom: 12 }}>My GitHub Contribution Graph</h4>
+      <h4 style={{ fontWeight: 700, marginBottom: 12, fontFamily: 'Roboto Mono, monospace' }}>My GitHub Contribution Graph</h4>
       <img src="https://ghchart.rshah.org/JamesDillonDev" alt="GitHub Contribution Graph" style={{ width: '100%', maxWidth: 700, background: '#fff', borderRadius: 8, boxShadow: '0 2px 12px rgba(0,0,0,0.07)' }} />
       </div>
     </Container>

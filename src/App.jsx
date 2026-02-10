@@ -5,7 +5,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
-import Physical from './pages/Physical.jsx';
+import Design from './pages/Design.jsx';
 import Software from './pages/Software.jsx';
 import Contact from './pages/Contact.jsx';
 
@@ -38,7 +38,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/physical" element={<Physical />} />
+          <Route path="/design" element={<Design />} />
           <Route path="/software" element={<Software />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
