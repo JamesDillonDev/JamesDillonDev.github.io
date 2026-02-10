@@ -2,9 +2,9 @@
 import { Carousel, Container } from 'react-bootstrap';
 
 const pianoImages = [
-  '/public/pianoA.jpg',
-  '/public/pianoB.jpg',
-  '/public/pianoC.jpg',
+  '/pianoA.jpg',
+  '/pianoB.jpg',
+  '/pianoC.jpg',
 ];
 
 export default function Design() {
