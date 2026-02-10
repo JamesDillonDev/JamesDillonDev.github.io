@@ -29,8 +29,8 @@ function StatBox({ icon, label, value }) {
 
 export default function Software() {
   return (
-    <Container fluid style={{ paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: '2rem' }}>
-      <h2 style={{ marginTop: '0.5rem', marginBottom: '2rem', fontFamily: 'Roboto Mono, monospace', fontWeight: 700 }}>Software Projects</h2>
+    <Container fluid style={{ paddingTop: 30, paddingLeft: 0, paddingRight: 0, paddingBottom: '2rem' }}>
+      <h2 style={{ marginTop: '0.5rem', marginBottom: '2rem', fontFamily: 'Roboto Mono, monospace', fontWeight: 700, paddingTop: 10 }}>Software Projects</h2>
       <Row className="g-4" xs={1} sm={1} md={2} lg={3} xl={3} style={{ justifyContent: 'center' }}>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
       <ProjectCard owner="JamesDillonDev" repo="gradicode" cardStyle={{ background: '#eaeaea', border: '1.5px solid #b6b6e0', fontFamily: 'Roboto Mono, monospace' }} />

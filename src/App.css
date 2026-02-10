@@ -1,21 +1,23 @@
 /* Make header and navbar stick to the top */
 
-.top-header {
+ .top-header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
+  left: 0;
+  width: 100%;
   background: #222;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding-top: 0.35rem;
-  padding-bottom: 0.35rem;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
  .site-title {
   text-align: center;
   margin: 0;
-  padding: 0.3rem 0 0.2rem 0;
+  padding: 0;
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -24,12 +26,7 @@
   display: inline-block;
   line-height: 1.1;
   font-size: 2rem;
-}
   background: #222;
-}
-
-
-.nav-bar {
   margin-bottom: 0;
 }
 
@@ -40,9 +37,6 @@
   align-items: center;
 }
 
-body {
-  padding-top: 110px; /* Adjust for fixed header height */
-}
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -55,8 +49,6 @@ body {
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-}
-.logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
@@ -84,4 +76,6 @@ body {
 
 .read-the-docs {
   color: #888;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }

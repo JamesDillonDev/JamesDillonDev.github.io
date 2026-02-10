@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div
       style={{
-        padding: '0.5rem 2rem 2rem 2rem',
+        padding: '5rem 2rem 2rem 2rem',
         maxWidth: 800,
         margin: '0 auto',
         fontFamily: 'Roboto Mono, monospace',
