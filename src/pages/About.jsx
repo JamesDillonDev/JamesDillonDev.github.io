@@ -40,9 +40,6 @@ export default function About() {
             </tbody>
           </table>
         </div>
-        <div style={{ fontWeight: 400, marginTop: '1.2rem', fontSize: 15, color: '#666' }}>
-          Currently studying A-Levels in Maths, Computer Science, Physics, Product Design, and an Extended Project Qualification.
-        </div>
       </section>
 
       {/* Experience Section */}
