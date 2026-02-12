@@ -33,19 +33,59 @@ export default function Software() {
       <h2 style={{ marginTop: '0.5rem', marginBottom: '2rem', fontFamily: 'Roboto Mono, monospace', fontWeight: 700, paddingTop: 10 }}>Software Projects</h2>
       <Row className="g-4" xs={1} sm={1} md={2} lg={3} xl={3} style={{ justifyContent: 'center' }}>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
-      <ProjectCard owner="JamesDillonDev" repo="gradicode" cardStyle={{ background: '#eaeaea', border: '1.5px solid #b6b6e0', fontFamily: 'Roboto Mono, monospace' }} />
+        <ProjectCard
+        owner="JamesDillonDev"
+        repo="gradicode"
+        cardStyle={{
+          background: '#eaf0fa',
+          border: '1.5px solid #7da7d9',
+          fontFamily: 'Roboto Mono, monospace'
+        }}
+        />
       </Col>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
-      <ProjectCard owner="JamesDillonDev" repo="tanker" cardStyle={{ background: '#fbeaea', border: '1.5px solid #e0b6b6', fontFamily: 'Roboto Mono, monospace' }} />
+        <ProjectCard
+        owner="JamesDillonDev"
+        repo="tanker"
+        cardStyle={{
+          background: '#faeaea',
+          border: '1.5px solid #d97d7d',
+          fontFamily: 'Roboto Mono, monospace'
+        }}
+        />
       </Col>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
-      <ProjectCard owner="JamesDillonDev" repo="JamesDillonDev.github.io" cardStyle={{ background: '#eaf7ea', border: '1.5px solid #b6e0b6', fontFamily: 'Roboto Mono, monospace' }} />
+        <ProjectCard
+        owner="JamesDillonDev"
+        repo="JamesDillonDev.github.io"
+        cardStyle={{
+          background: '#eafae9',
+          border: '1.5px solid #7dd97d',
+          fontFamily: 'Roboto Mono, monospace'
+        }}
+        />
       </Col>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
-      <ProjectCard owner="JamesDillonDev" repo="TCP-Chat" cardStyle={{ background: '#eaf0fa', border: '1.5px solid #b6cbe0', fontFamily: 'Roboto Mono, monospace' }} />
+        <ProjectCard
+        owner="JamesDillonDev"
+        repo="TCP-Chat"
+        cardStyle={{
+          background: '#f0eafa',
+          border: '1.5px solid #a77dd9',
+          fontFamily: 'Roboto Mono, monospace'
+        }}
+        />
       </Col>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
-      <ProjectCard owner="JamesDillonDev" repo="Minejourney" cardStyle={{ background: '#335a98', border: '1.5px solid #b6cbe0', fontFamily: 'Roboto Mono, monospace' }} />
+        <ProjectCard
+        owner="JamesDillonDev"
+        repo="Minejourney"
+        cardStyle={{
+          background: '#fafae9',
+          border: '1.5px solid #d9d97d',
+          fontFamily: 'Roboto Mono, monospace'
+        }}
+        />
       </Col>
       </Row>
       <div style={{ marginTop: '3rem', textAlign: 'center' }}>
@@ -53,5 +93,5 @@ export default function Software() {
       <img src="https://ghchart.rshah.org/JamesDillonDev" alt="GitHub Contribution Graph" style={{ width: '100%', maxWidth: 700, background: '#fff', borderRadius: 8, boxShadow: '0 2px 12px rgba(0,0,0,0.07)' }} />
       </div>
     </Container>
-    );
+  );
 }
