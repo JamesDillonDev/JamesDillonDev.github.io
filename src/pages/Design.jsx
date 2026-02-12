@@ -24,7 +24,7 @@ export default function Design() {
       >
         Designs
       </h2>
-      <div style={{ width: 800, maxWidth: '100%', height: 480, margin: '0 auto', overflow: 'hidden' }}>
+      <div style={{ width: '90vw', maxWidth: 800, height: '56vw', maxHeight: 480, marginLeft: 'auto', marginRight: 'auto', overflow: 'hidden', paddingTop: 32 }}>
         <Carousel style={{ width: '100%', height: '100%' }}>
           {pianoImages.map((img, idx) => (
             <Carousel.Item key={idx}>
@@ -32,7 +32,7 @@ export default function Design() {
                 className="d-block w-100"
                 src={img}
                 alt={`Children's Piano ${idx + 1}`}
-                style={{ width: '100%', height: 480, objectFit: 'cover' }}
+                style={{ width: '100%', height: '56vw', maxHeight: 480, objectFit: 'cover' }}
               />
               <Carousel.Caption>
                 <h4>Children's Piano</h4>

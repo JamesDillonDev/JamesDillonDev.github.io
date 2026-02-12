@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: inline-block;
+  }
+  .desktop-nav {
+    display: none !important;
+  }
+}

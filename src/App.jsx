@@ -1,7 +1,9 @@
 
 
 import './App.css';
+import './responsive-overrides.css';
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import MobileNav from './MobileNav.jsx';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home.jsx';
@@ -21,11 +23,12 @@ export default function App() {
   return (
     <Router>
       <div className="top-header">
-        <Navbar bg="dark" variant="dark" expand="md" className="nav-bar">
-          <Container className="d-flex justify-content-between align-items-center">
-            <h1 className="site-title mb-0">
-              <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>James Dillon.</Link>
-            </h1>
+        <Container className="d-flex justify-content-between align-items-center">
+          <h1 className="site-title mb-0">
+            <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>James Dillon.</Link>
+          </h1>
+          <MobileNav />
+          <Navbar bg="dark" variant="dark" expand="md" className="nav-bar desktop-nav">
             <Nav className="ms-auto">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
@@ -45,8 +48,8 @@ export default function App() {
                 <FaInstagram />
               </a>
             </div>
-          </Container>
-        </Navbar>
+          </Navbar>
+        </Container>
       </div>
       <div style={{ marginTop: '4.5rem' }}>
         <Routes>
