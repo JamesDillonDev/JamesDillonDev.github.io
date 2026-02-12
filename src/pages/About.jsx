@@ -16,7 +16,7 @@ export default function About() {
       <section style={{ marginBottom: '2.2rem' }}>
         <h3 style={{ fontWeight: 700, fontSize: '1.3rem', marginBottom: 8 }}>Education</h3>
         <div style={{ fontWeight: 400, color: '#888', marginBottom: 18, marginTop: -6, fontSize: 15 }}>
-          I am a student at Knights Templar School Sixth Form (2020–present), currently taking four A-Levels (Maths, Computer Science, Physics, and Product Design) and an Extended Project Qualification. Below are my GCSE results:
+          I am a student at Knights Templar School Sixth Form (2020–present), currently taking three A-Levels (Maths, Computer Science, and Product Design) and an Extended Project Qualification. Below are my GCSE results:
         </div>
         <div style={{ overflowX: 'auto', maxWidth: 700 }}>
           <table className="table table-bordered table-striped" style={{ width: '100%', marginTop: '0.7rem', fontFamily: 'Roboto Mono, monospace', fontSize: 15 }}>
