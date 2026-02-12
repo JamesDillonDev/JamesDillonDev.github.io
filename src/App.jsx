@@ -9,6 +9,7 @@ import About from './pages/About.jsx';
 import Design from './pages/Design.jsx';
 import Software from './pages/Software.jsx';
 import Contact from './pages/Contact.jsx';
+import Work from './pages/Work.jsx';
 
 // Ensure Google Fonts for 'Roboto Mono' are loaded
 const fontLink = document.createElement('link');
@@ -28,6 +29,7 @@ export default function App() {
             <Nav className="ms-auto">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
+              <Nav.Link as={Link} to="/work">Work</Nav.Link>
               <Nav.Link as={Link} to="/design">Design</Nav.Link>
               <Nav.Link as={Link} to="/software">Software</Nav.Link>
               <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
@@ -50,6 +52,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
           <Route path="/design" element={<Design />} />
           <Route path="/software" element={<Software />} />
           <Route path="/contact" element={<Contact />} />

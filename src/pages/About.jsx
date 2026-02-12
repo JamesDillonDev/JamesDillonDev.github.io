@@ -42,14 +42,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section style={{ marginBottom: '2.2rem' }}>
-        <h3 style={{ fontWeight: 700, fontSize: '1.3rem', marginBottom: 8 }}>Experience</h3>
-        <div style={{ fontWeight: 600, marginBottom: 2, fontSize: 15 }}>Janus Technology – Junior Software Engineer (July 2025 – Aug 2025)</div>
-        <div style={{ marginBottom: 8, fontSize: 15, color: '#666' }}>
-          Designed and implemented an automated support system that worked out a customer’s issue and guided them through a step-by-step guide on how to resolve it.
-        </div>
-      </section>
+      {/* Experience Section moved to Work page */}
 
       {/* Out of School Section */}
       <section style={{ marginBottom: '2.2rem' }}>

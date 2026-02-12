@@ -34,6 +34,7 @@ export default function Home() {
         <h3 style={{ fontWeight: 700, fontSize: '1.15rem', margin: '2.2rem 0 0.7rem 0', color: '#222', textAlign: 'left' }}>Explore the site</h3>
         <ul style={{ fontSize: 16, margin: '0.7em 0 0 0', paddingLeft: '1.2em', color: '#888', textAlign: 'left' }}>
           <li><strong>About</strong> – My education, experience, and qualifications.</li>
+          <li><strong>Work</strong> – My professional work experience and projects.</li>
           <li><strong>Design</strong> – Physical and 3D-printed projects, including a Children's Piano.</li>
           <li><strong>Software</strong> – Software projects with live GitHub stats.</li>
           <li><strong>Contact</strong> – Get in touch with me directly.</li>
