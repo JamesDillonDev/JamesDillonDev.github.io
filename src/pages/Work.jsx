@@ -63,7 +63,7 @@ return (
                     style={{ width: 320, minWidth: 200, maxWidth: '60vw', borderRadius: 8, boxShadow: '0 2px 12px rgba(0,0,0,0.07)', marginBottom: 8, flexShrink: 0 }}
                 />
                     <div style={{ fontSize: 15, color: '#444', marginBottom: 8, flex: 1 }}>
-                        I contributed to the development of the Stile app for <a href="https://www.avproglobal.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#1a237e', textDecoration: 'underline' }}>AVProEdge</a>, a powerful drag-and-drop control application for managing multiview video sources across multiple displays. My main responsibility was implementing the live video preview feature for all draggable sources, allowing users to see real-time previews of each input before assigning them to a display. This enhancement made it much easier for users to identify and select the correct source, improving the overall usability and experience of the app.
+                        I contributed to the development of the Stile app for <a href="https://www.avproglobal.com/pages/stile-app-avpro" target="_blank" rel="noopener noreferrer" style={{ color: '#1a237e', textDecoration: 'underline' }}>AVProEdge</a>, a powerful drag-and-drop control application for managing multiview video sources across multiple displays. My main responsibility was implementing the live video preview feature for all draggable sources, allowing users to see real-time previews of each input before assigning them to a display. This enhancement made it much easier for users to identify and select the correct source, improving the overall usability and experience of the app.
                     </div>
             </div>
         </section>
