@@ -7,9 +7,15 @@ const pianoImages = [
   '/pianoC.jpg',
 ];
 
+import { Helmet } from 'react-helmet-async';
+
 export default function Design() {
   return (
     <>
+      <Helmet>
+        <title>James Dillon | Design</title>
+        <meta name="description" content="Explore James Dillon's physical and 3D-printed design projects." />
+      </Helmet>
       <h2
         style={{
           fontFamily: 'Roboto Mono, monospace',

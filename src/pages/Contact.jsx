@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import emailjs from 'emailjs-com';
 
 
@@ -38,6 +39,11 @@ export default function Contact() {
   };
 
   return (
+    <>
+      <Helmet>
+        <title>James Dillon | Contact</title>
+        <meta name="description" content="Contact James Dillon directly via email form." />
+      </Helmet>
     <div style={{ padding: '0 2rem 2rem 2rem', width: '90vw', maxWidth: 'none', margin: '0 auto', fontFamily: 'Roboto Mono, monospace' }}>
       <h2>Contact</h2>
       {alert.show && (
@@ -90,5 +96,6 @@ export default function Contact() {
         <button type="submit" className="btn btn-secondary" style={{ width: 140 }}>Contact</button>
       </form>
     </div>
+    </>
   );
 }

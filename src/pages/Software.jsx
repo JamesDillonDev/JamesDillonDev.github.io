@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from '../helpers/ProjectCard.jsx';
 
@@ -29,7 +30,12 @@ function StatBox({ icon, label, value }) {
 
 export default function Software() {
   return (
-    <Container fluid style={{ paddingTop: 30, paddingLeft: 0, paddingRight: 0, paddingBottom: '2rem' }}>
+    <>
+      <Helmet>
+        <title>James Dillon | Software</title>
+        <meta name="description" content="Browse James Dillon's software projects with live GitHub stats." />
+      </Helmet>
+      <Container fluid style={{ paddingTop: 30, paddingLeft: 0, paddingRight: 0, paddingBottom: '2rem' }}>
       <h2 style={{ marginTop: '0.5rem', marginBottom: '2rem', fontFamily: 'Roboto Mono, monospace', fontWeight: 700, paddingTop: 10 }}>Software Projects</h2>
       <Row className="g-4" xs={1} sm={1} md={2} lg={3} xl={3} style={{ justifyContent: 'center' }}>
       <Col style={{ display: 'flex', justifyContent: 'center' }}>
@@ -93,5 +99,6 @@ export default function Software() {
       <img src="https://ghchart.rshah.org/JamesDillonDev" alt="GitHub Contribution Graph" style={{ width: '100%', maxWidth: 700, background: '#fff', borderRadius: 8, boxShadow: '0 2px 12px rgba(0,0,0,0.07)' }} />
       </div>
     </Container>
+    </>
   );
 }

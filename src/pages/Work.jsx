@@ -1,10 +1,16 @@
 import React from "react";
+import { Helmet } from 'react-helmet-async';
 
 // TODO: Replace with actual work experience content from About
 const Work = () => {
-return (
-    <div className="work-page" style={{ padding: '5rem 2rem 2rem 2rem', maxWidth: 1200, margin: '0 auto', fontFamily: 'Roboto Mono, monospace', textAlign: 'left', color: '#222' }}>
-        <h1 style={{ fontFamily: 'Roboto Mono, monospace', fontWeight: 700, marginBottom: '1.2rem', marginTop: 0, fontSize: '2.1rem', letterSpacing: '-0.02em' }}>Work Experience</h1>
+    return (
+        <>
+            <Helmet>
+                <title>James Dillon | Work</title>
+                <meta name="description" content="James Dillon's professional work experience and projects." />
+            </Helmet>
+            <div className="work-page" style={{ padding: '5rem 2rem 2rem 2rem', maxWidth: 1200, margin: '0 auto', fontFamily: 'Roboto Mono, monospace', textAlign: 'left', color: '#222' }}>
+                <h1 style={{ fontFamily: 'Roboto Mono, monospace', fontWeight: 700, marginBottom: '1.2rem', marginTop: 0, fontSize: '2.1rem', letterSpacing: '-0.02em' }}>Work Experience</h1>
         
         <section style={{ marginBottom: '2.2rem', position: 'relative' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 18, flexWrap: 'wrap', marginBottom: 8, position: 'relative' }}>
@@ -68,6 +74,7 @@ return (
             </div>
         </section>
     </div>
+    </>
 );
 };
 

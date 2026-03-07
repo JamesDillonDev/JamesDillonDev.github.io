@@ -1,6 +1,12 @@
+import { Helmet } from 'react-helmet-async';
+
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title>James Dillon | Home</title>
+        <meta name="description" content="Welcome to James Dillon's portfolio. Explore projects, background, and get in touch." />
+      </Helmet>
       <img
         src="/me.jpg"
         alt="James Dillon"

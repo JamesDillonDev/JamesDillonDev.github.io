@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 export default function About() {
   const [showCadets, setShowCadets] = useState(true);
@@ -7,7 +8,12 @@ export default function About() {
   const [showOtherQualifications, setShowOtherQualifications] = useState(false);
 
   return (
-    <div
+    <>
+      <Helmet>
+        <title>James Dillon | About</title>
+        <meta name="description" content="Learn about James Dillon's education, experience, and qualifications." />
+      </Helmet>
+      <div
       style={{
         padding: '5rem 2rem 2rem 2rem',
         maxWidth: 1200,
@@ -180,5 +186,6 @@ export default function About() {
       )}
       </section>
     </div>
+    </>
   );
 }
