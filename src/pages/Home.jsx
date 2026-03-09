@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { FaHome } from 'react-icons/fa';
-import { SiHomeassistant, SiJellyfin } from 'react-icons/si';
+import { SiHomeassistant, SiJellyfin, SiWireguard } from 'react-icons/si';
 
 export default function Home() {
 
@@ -41,6 +41,16 @@ export default function Home() {
               <SiHomeassistant size={18} color="#3949ab" />
             </span>
             <span style={{ fontSize: 13 }}>Home Assistant</span>
+          </button>
+          <button
+            onClick={() => window.open('https://vpn.jamesdillon.uk', '_blank')}
+            style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#3949ab', background: '#eaf0fa', border: 'none', fontWeight: 700, fontSize: 14, padding: '0.5rem 0.7rem', borderRadius: 7, cursor: 'pointer', boxShadow: '0 1px 4px rgba(0,0,0,0.07)', marginBottom: 6, transition: 'background 0.2s', width: '100%', minWidth: 80 }}
+            title="WireGuard VPN"
+          >
+            <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 22, height: 22 }}>
+              <SiWireguard size={18} color="#3949ab" />
+            </span>
+            <span style={{ fontSize: 13 }}>WireGuard VPN</span>
           </button>
           <button
             onClick={() => window.open('https://jellyfin.jamesdillon.uk', '_blank')}
